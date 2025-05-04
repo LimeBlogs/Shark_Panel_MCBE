@@ -1,0 +1,243 @@
+{
+  "format_version": "1.8.0",
+  
+  "animations": {
+    "animation.w": {
+      "loop": true,
+      "bones": {
+        "w_rend": {
+          "position": [ -1189, -1000, 0 ]
+        }
+      }
+    },
+    "animation.a": {
+      "loop": true,
+      "bones": {
+        "a_rend": {
+          "position": [ -1214.1, -1024.8, 0 ]
+        }
+      }
+    },
+    "animation.s": {
+      "loop": true,
+      "bones": {
+        "s_rend": {
+          "position": [ -1189, -1024.8, 0 ]
+        }
+      }
+    },
+    "animation.d": {
+      "loop": true,
+      "bones": {
+        "d_rend": {
+          "position": [ -1164.1, -1024.8, 0 ]
+        }
+      }
+    },
+    "animation.lmb": {
+      "loop": true,
+      "bones": {
+        "lmb_rend": {
+          "position": [ -1214.1, "(query.is_swimming ? -22.5) + -62", 0 ]
+        }
+      }
+    },
+    "animation.rmb": {
+      "loop": true,
+      "bones": {
+        "rmb_rend": {
+          "position": [ -1176.1, "(query.is_swimming ? -22.5) + -62", 0 ]
+        }
+      }
+    },
+    "animation.jump": {
+      "loop": true,
+      "bones": {
+        "jump_rend": {
+          "position": [ -4400.1, "(query.is_swimming ? -22.5) + -60", 0 ]
+        }
+      }
+    },
+    "animation.sprint": {
+      "loop": true,
+      "bones": {
+        "sprint_rend": {
+          "position": [ -2124.1, "(query.is_swimming ? -22.5) + -62.2", 0 ]
+        }
+      }
+    },
+    "animation.sneak": {
+      "loop": true,
+      "bones": {
+        "sneak_rend": {
+          "position": [ -3376, "(query.is_swimming ? -22.5) + -62", 0 ]
+        }
+      }
+    },
+    "animation.cross_hair": {
+      "loop": true,
+      "bones": {
+        "cross_hair_rend": {
+          "position": [ -569.2, 0, 0 ]
+        }
+      }
+    },
+    "animation.hit": {
+      "loop": true,
+      "bones": {
+        "hit_rend": {
+          "position": [ -325, -1270, 0 ]
+        }
+      }
+    },
+    "animation.cross": {
+      "loop": true,
+      "bones": {
+        "cross_rend": {
+          "position": [ 0, "query.is_swimming ? -19 : 0", 0 ]
+        },
+        "cross_center": {
+          "position": [ 0.25, 605.25, 0 ]
+        },
+        "cross_top": {
+          "position": [ 0, "variable.attack_body_rot_y ? 624.5 - variable.attack_time * 16.0 : 608.5", 0 ]
+        },
+        "cross_bottom": {
+          "position": [ 0, "variable.attack_body_rot_y ? variable.attack_time * 16.0 + 582.0 : 598.0", 0 ]
+        },
+        "cross_left": {
+          "position": [ "variable.attack_body_rot_y ? variable.attack_time * 16.0 - 23.0 : -7.0", 605, 0 ]
+        },
+        "cross_right": {
+          "position": [ "variable.attack_body_rot_y ? 19.5 - variable.attack_time * 16.0 : 3.5", 605, 0 ]
+        }
+      }
+    },
+    "animation.potion": {
+      "loop": true,
+      "bones": {
+        "potion_rend": {
+          "position": [ -8000, "(query.is_swimming ? -1000.5) + -0", 0 ]
+        }
+      }
+    },
+    "animation.totem": {
+      "loop": true,
+      "bones": {
+        "totem_rend": {
+          "position": [ -8000, "(query.is_swimming ? -22.5) + -0", 0 ]
+        }
+      }
+    },
+        "animation.helmet": {
+            "loop": true,
+            "bones": {
+                "helmet_rend": {
+                    "position": [
+                        -61.2,
+                        -478,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.chestplate": {
+            "loop": true,
+            "bones": {
+                "chestplate_rend": {
+                    "position": [
+                        -61.2,
+                        -491,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.leggings": {
+            "loop": true,
+            "bones": {
+                "leggings_rend": {
+                    "position": [
+                        -61.2,
+                        -505,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.boots": {
+            "loop": true,
+            "bones": {
+                "boots_rend": {
+                    "position": [
+                        -61.2,
+                        -518,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.helmet2": {
+            "loop": true,
+            "bones": {
+                "helmet_rend2": {
+                    "position": [
+                        -64,
+                        -2000,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.chestplate2": {
+            "loop": true,
+            "bones": {
+                "chestplate_rend2": {
+                    "position": [
+                        -48,
+                        -2000,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.leggings2": {
+            "loop": true,
+            "bones": {
+                "leggings_rend2": {
+                    "position": [
+                        -32,
+                        -2000,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.boots2": {
+            "loop": true,
+            "bones": {
+                "boots_rend2": {
+                    "position": [
+                        -16,
+                        -2000,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.direction_hud": {
+            "loop": true,
+            "bones": {
+                "x": {
+                    "position":  [-37.9, "(query.is_swimming ? -22.5) + -4258.2", 20 ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_gliding ? -query.body_y_rotation) + (query.is_riding ? query.target_y_rotation)",
+                        0
+                    ],
+                    "scale": 5.13
+                }
+            }
+        }
+      }
+  }

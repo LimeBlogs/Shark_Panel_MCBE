@@ -1,0 +1,1099 @@
+{
+  "format_version": "1.12.0",
+  
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.w_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "w_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 24, 24, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.a_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "a_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 24, 24, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.s_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "s_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 24, 24, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.d_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "d_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 24, 24, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.jump_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "jump_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 74.1, 12, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.lmb_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "lmb_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 36.5, 16, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.rmb_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "rmb_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 36.5, 16, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.rmb_wool_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "rmb_wool_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 36.5, 16, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.sprint_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "sprint_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 74.1, 16, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.sneak_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "sneak_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 74.1, 16, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.cross_rend",
+        "texture_width": 36,
+        "texture_height": 36,
+        "visible_bounds_width": 36,
+        "visible_bounds_height": 36,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "cross_rend",
+          "cubes": [
+            {
+              "origin": [ 0.0, 0.0, 0.0 ],
+              "size": [ 0.0, 0.0, 0.0 ]
+            }
+          ]
+        },
+        {
+          "name": "cross_center",
+          "parent": "woshihengchuan",
+          "cubes": [
+            {
+              "origin": [ -0.3, 0.3, 0.0 ],
+              "size": [ 2.83, 2.88, 0.0 ],
+              "inflate": -0.35,
+              "uv": [ 16, 16 ]
+            }
+          ]
+        },
+        {
+          "name": "cross_top",//上
+          "parent": "woshihengchuan",
+          "cubes": [
+            {
+              "origin": [ -0.29, 2.3, 0.0 ],
+              "size": [ 3.0, 8.0, 0.0 ],
+              "inflate": -0.6,
+              "uv": [ 0, 100 ]
+            }
+          ]
+        },
+        {
+          "name": "cross_bottom",//下
+          "parent": "woshihengchuan",
+          "cubes": [
+            {
+              "origin": [ -0.29, -3.0, 0.0 ],
+              "size": [ 3.0, 8.0, 0.0 ],
+              "inflate": -0.6,
+              "uv": [ 0, 16 ]
+            }
+          ]
+        },
+        {//左
+          "name": "cross_left",
+          "parent": "woshihengchuan",
+          "cubes": [
+            {
+              "origin": [ -3.9, 0.5, 0.0 ],
+              "size": [ 8.5, 3.0, 0.0 ],
+              "inflate": -0.6,
+              "uv": [ 8, 8 ]
+            }
+          ]
+        },
+        {//右
+          "name": "cross_right",
+          "parent": "woshihengchuan",
+          "cubes": [
+            {
+              "origin": [ 2.1, 0.5, 0.0 ],
+              "size": [ 8.2, 3.0, 0.0 ],
+              "inflate": -0.6,
+              "uv": [ 8, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.hit_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "hit_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 700, 500, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.cross_a_rend",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [ 0, 0, 0 ]
+      },
+      "bones": [
+        {
+          "name": "cross_a_rend",
+          "pivot": [ 0, 8, 0 ],
+          "cubes": [
+            {
+              "origin": [ -8, 0, 0 ],
+              "size": [ 17, 17, 0 ],
+              "uv": [ 0, 0 ]
+            }
+          ]
+        }
+      ]
+    },
+        {
+            "description": {
+                "identifier": "geometry.boots_rend",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "boots_rend",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.chestplate_rend",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "chestplate_rend",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.leggings_rend",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "leggings_rend",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.helmet_rend",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "helmet_rend",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.boots_rend2",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "boots_rend2",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.chestplate_rend2",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "chestplate_rend2",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.leggings_rend2",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "leggings_rend2",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.helmet_rend2",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "helmet_rend2",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.direction_hud",
+                "texture_width": 192,
+                "texture_height": 14,
+                "visible_bounds_width": 5,
+                "visible_bounds_height": 73,
+                "visible_bounds_offset": [
+                    0,
+                    34.5,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "x",
+                    "pivot": [
+                        0,
+                        1128,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -13.32,
+                                1119.15,
+                                0
+                            ],
+                            "size": [
+                                26.64,
+                                2.5,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        20,
+                                        0
+                                    ],
+                                  "uv_size": [ 128, 13 ]},
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        0
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        0
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        0
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        0
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        0
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.potion_rend",
+                "texture_width": 16,
+                "texture_height": 10,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "potion_rend",
+                    "pivot": [
+                        3.5,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4.5,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                8,
+                                10,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        8,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        8,
+                                        10
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        10
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "origin": [
+                                -11.75,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                8.25,
+                                10,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        8,
+                                        10
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        10
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.totem_rend",
+                "texture_width": 16,
+                "texture_height": 10,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "totem_rend",
+                    "pivot": [
+                        3.5,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4.5,
+                                0,
+                                0
+                            ],
+                            "size": [
+                                8,
+                                10,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        8,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        8,
+                                        10
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        10
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        0,
+                                        10
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        17.23077,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        17.23077,
+                                        0
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "origin": [ -11.5, 0, 0 ],
+                            "size": [ 8, 10, 0 ],
+                            "uv": {
+                                "north": {
+                                    "uv": [ 0, 0 ],
+                                    "uv_size": [ 8, 10 ]
+                                },
+                                "east": {
+                                    "uv": [ 0, 0 ],
+                                    "uv_size": [ 0, 10 ]
+                                },
+                                "south": {
+                                    "uv": [ 17.23077, 0 ],
+                                    "uv_size": [ 17.23077, 10 ]
+                                },
+                                "west": {
+                                    "uv": [ 17.23077, 0 ],
+                                    "uv_size": [ 0, 10 ]
+                                },
+                                "up": {
+                                    "uv": [ 0, 0 ],
+                                    "uv_size": [ 17.23077, 0 ]
+                                  },
+                                "down": {
+                                    "uv": [ 17.23077, 0 ],
+                                    "uv_size": [ 17.23077, 0 ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+  ]
+}

@@ -1,0 +1,65 @@
+{"namespace": "config","config": {"type": "panel",
+
+//SHARK PANEL
+//这里是面板的配置设置，在这里设置面板的开关、数值等
+//在这里设置后，即使重进游戏也会生效
+//此文件可分享～
+
+
+
+//配置设置
+//写入配置的标题和Icon
+
+"$config_icon": "textures/SHARK/panel/config/icon",
+"$config_title": "默认配置",
+"$config_title_subtitle": "默认简介",
+
+
+
+//Hud设置
+//一般的true是开启，false是关闭
+
+"$title_config": true,   //Title 和 Title subtitle
+"$title_subtitle_config": true,   //Title副标题
+"$title_actionbar_config": true,   //Title actionbar
+"$chat_config": true,   //聊天栏
+"$boss_config": true,   //Boss条
+"$boss_name_config": true,   //Boso名称
+"$boss_background_config": true,   //Boss血条
+"$item_config": true,   //物品名
+"$item_name_config": true,   //物品名称
+"$item_background_config": true,   //物品背景
+"$cursor_config": true,   //准心
+"$touch_config": true,   //触屏光圈
+"$tip_config": true,   //Tip
+"$tip_top_config": true,   //Tip顶的字
+"$tip_play_config": true,    //Tip左侧的字
+"$tip_scores_config": true,   //Tip右侧的数字
+"$renderer_config": true,   //纸娃娃
+"$player_renderer_live_config": false,   //false为3D纸娃娃，true为2D纸娃娃
+"$position_config": true,   //坐标
+"$effect_config": true,   //右侧药水图标
+"$hotbar_config": true,   //物品栏
+"$elipses_config": true,   //背包按钮
+"$hotbar_end_cap_config": true,   //物品栏左右两侧的黑条
+"$watermark_config": true,   //面板水印
+"$watermark_background_config": true,   //面板水印的背景图
+
+
+
+//Music设置
+//在这里更改音乐名称和音乐播放的时间，需要播放的音乐在sound/music里修改
+
+"$music_name_0_config": "name0",   "$music_time_0_config": "00.00",
+"$music_name_1_config": "name1",   "$music_time_0_config": "00.00",
+"$music_name_2_config": "name2",   "$music_time_0_config": "00.00",
+"$music_name_3_config": "name3",   "$music_time_0_config": "00.00",
+"$music_name_4_config": "name4",   "$music_time_0_config": "00.00",
+"$music_name_5_config": "name5",   "$music_time_0_config": "00.00",
+"$music_name_6_config": "name6",   "$music_time_0_config": "name0",
+"$music_name_7_config": "name7",   "$music_time_0_config": "00.00",
+"$music_name_8_config": "name8",   "$music_time_0_config": "00.00",
+"$music_name_9_config": "name9",   "$music_time_0_config": "00.00"
+
+
+}}

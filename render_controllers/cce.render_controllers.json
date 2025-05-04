@@ -1,0 +1,688 @@
+{
+  "format_version": "1.8.0",
+  
+  "render_controllers": {
+    "controller.render.title_button_display_w": {
+      "geometry": "Geometry.w_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["temp.detect = (query.is_sprinting == 0 && query.position_delta(2) < 0.07); return Array.option_button[temp.detect];"],
+      "arrays": { "textures": {"Array.option_button": [ "Texture.button_hover", "Texture.button_default" ]}},
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_a": {
+      "geometry": "Geometry.a_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["temp.detect = (query.cardinal_facing == 2 && query.movement_direction(0) >= -0.1) || (query.cardinal_facing == 5 && query.movement_direction(2) <= 0.1) || (query.cardinal_facing == 3 && query.movement_direction(0) >= 0.1) || (query.cardinal_facing == 4 && query.movement_direction(2) >= 0.1); return Array.option_button[temp.detect];"],
+      "arrays": { "textures": {"Array.option_button": [ "Texture.button_default", "Texture.button_hover" ]}},
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_s": {
+      "geometry": "Geometry.s_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["temp.detect = (query.is_sprinting == 0 && query.position_delta(2) < -0.07); return Array.option_button[temp.detect];"],
+      "arrays": { "textures": {"Array.option_button": [ "Texture.button_default", "Texture.button_hover" ]}},
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_d": {
+      "geometry": "Geometry.d_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["temp.detect = (query.cardinal_facing == 2 && query.movement_direction(0) <= -0.1) || (query.cardinal_facing == 5 && query.movement_direction(2) >= 0.1) || (query.cardinal_facing == 3 && query.movement_direction(0) <= -0.1) || (query.cardinal_facing == 4 && query.movement_direction(2) <= 0.1); return Array.option_button[temp.detect];"],
+      "arrays": { "textures": {"Array.option_button": [ "Texture.button_default", "Texture.button_hover" ]}},
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_jump": {
+      "geometry": "Geometry.jump_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["query.is_jumping == 0 ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_lmb": {
+      "geometry": "Geometry.lmb_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["!variable.attack_body_rot_y ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_rmb": {
+      "geometry": "Geometry.rmb_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["!variable.item_use_normalized ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_rmb_wool": {
+      "geometry": "Geometry.rmb_wool_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["!variable.attack_body_rot_y ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_sprint": {
+      "geometry": "Geometry.sprint_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["query.is_sprinting == 0 ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+    "controller.render.title_button_display_sneak": {
+      "geometry": "Geometry.sneak_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["query.is_sneaking == 0 ? Texture.button_default : Texture.button_hover"],
+      "is_hurt_color": {"a": "0.0"},
+      "on_fire_color": {"a": "0.0"}
+    },
+      "controller.render.title_button_display_cross": {
+        "geometry": "geometry.cross_rend",
+        "materials": [ { "*": "material.default" } ],
+        "textures": [ "texture.cross" ],
+        "is_hurt_color": { "r": 0, "g": 0, "b": 0 }
+    },
+    "controller.render.title_button_display_hit": {
+      "geometry": "Geometry.hit_rend",
+      "materials": [{"*": "Material.blend_filling"}],
+      "textures": ["temp.detect = (query.is_sprinting == 0 && query.position_delta(2) < 0.07); return Array.option_button[temp.detect];"],
+      "arrays": { "textures": {"Array.option_button": [ "Texture.hit_background", "Texture.hit_background" ]}}
+    },
+        "controller.render.direction_hud": {
+            "geometry": "Geometry.direction_hud",
+            "materials": [
+                {
+                    "*": "Material.direction_hud"
+                }
+            ],
+            "textures": [
+                "Texture.direction_hud",
+                "Texture.direction_hud",
+                "Texture.direction_hud"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "uv_anim": {
+                "offset": [
+                    "0.00277777777778 * (90 + query.camera_rotation(1))",
+                    0
+                ],
+                "scale": [
+                    1,
+                    1
+                ]
+            }
+        },
+    "controller.render.hud_helmet": {
+      "arrays": {
+        "textures": {
+          "array.helmets": [
+            "texture.leather_helmet",
+            "texture.chainmail_helmet",
+            "texture.iron_helmet",
+            "texture.diamond_helmet",
+            "texture.gold_helmet",
+            "texture.gold_helmet",
+            "texture.turtle_helmet",
+            "texture.netherite_helmet"
+          ]
+        }
+      },
+      "geometry": "Geometry.helmet_rend","materials": [{"*": "material.default"}],
+      "textures": ["array.helmets[query.armor_texture_slot(0)]"],
+      "is_hurt_color": {"r": "variable.enchanted_helmet ? 0.4 : 0.0","g": 0,"b": "variable.enchanted_helmet","a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"},
+      "on_fire_color": {"r": "variable.enchanted_helmet ? 0.4 : 0.0","g": 0,"b": "variable.enchanted_helmet","a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"},
+      "overlay_color": {"r": "variable.enchanted_helmet ? 0.4 : 0.0","g": 0,"b": "variable.enchanted_helmet","a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"}},
+        "controller.render.hud_chestplate": {
+            "arrays": {
+                "textures": {
+                    "array.chestplates": [
+                        "texture.leather_chestplate",
+                        "texture.chainmail_chestplate",
+                        "texture.iron_chestplate",
+                        "texture.diamond_chestplate",
+                        "texture.gold_chestplate",
+                        "texture.elytra",
+                        "texture.elytra",
+                        "texture.netherite_chestplate"
+                    ]
+                }
+            },
+            "geometry": "Geometry.chestplate_rend",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.chestplates[query.armor_texture_slot(1)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.hud_leggings": {
+            "arrays": {
+                "textures": {
+                    "array.leggings": [
+                        "texture.leather_leggings",
+                        "texture.chainmail_leggings",
+                        "texture.iron_leggings",
+                        "texture.diamond_leggings",
+                        "texture.gold_leggings",
+                        "texture.gold_leggings",
+                        "texture.gold_leggings",
+                        "texture.netherite_leggings"
+                    ]
+                }
+            },
+            "geometry": "Geometry.leggings_rend",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.leggings[query.armor_texture_slot(2)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.hud_boots": {
+            "arrays": {
+                "textures": {
+                    "array.boots": [
+                        "texture.leather_boots",
+                        "texture.chainmail_boots",
+                        "texture.iron_boots",
+                        "texture.diamond_boots",
+                        "texture.gold_boots",
+                        "texture.gold_boots",
+                        "texture.gold_boots",
+                        "texture.netherite_boots"
+                    ]
+                }
+            },
+            "geometry": "Geometry.boots_rend",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.boots[query.armor_texture_slot(3)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.empty_helmetv": {
+            "geometry": "Geometry.helmet_rend",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_helmet"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_chestplatev": {
+            "geometry": "Geometry.chestplate_rend",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_chestplate"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_leggingsv": {
+            "geometry": "Geometry.leggings_rend",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_leggings"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_bootsv": {
+            "geometry": "Geometry.boots_rend",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_boots"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.hud_helmet2": {
+            "arrays": {
+                "textures": {
+                    "array.helmets": [
+                        "texture.leather_helmet",
+                        "texture.chainmail_helmet",
+                        "texture.iron_helmet",
+                        "texture.diamond_helmet",
+                        "texture.gold_helmet",
+                        "texture.gold_helmet",
+                        "texture.turtle_helmet",
+                        "texture.netherite_helmet"
+                    ]
+                }
+            },
+            "geometry": "Geometry.helmet_rend2",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.helmets[query.armor_texture_slot(0)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_helmet ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_helmet",
+                "a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_helmet ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_helmet",
+                "a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_helmet ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_helmet",
+                "a": "variable.enchanted_helmet ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.hud_chestplate2": {
+            "arrays": {
+                "textures": {
+                    "array.chestplates": [
+                        "texture.leather_chestplate",
+                        "texture.chainmail_chestplate",
+                        "texture.iron_chestplate",
+                        "texture.diamond_chestplate",
+                        "texture.gold_chestplate",
+                        "texture.elytra",
+                        "texture.elytra",
+                        "texture.netherite_chestplate"
+                    ]
+                }
+            },
+            "geometry": "Geometry.chestplate_rend2",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.chestplates[query.armor_texture_slot(1)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_chestplate ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_chestplate",
+                "a": "variable.enchanted_chestplate ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.hud_leggings2": {
+            "arrays": {
+                "textures": {
+                    "array.leggings": [
+                        "texture.leather_leggings",
+                        "texture.chainmail_leggings",
+                        "texture.iron_leggings",
+                        "texture.diamond_leggings",
+                        "texture.gold_leggings",
+                        "texture.gold_leggings",
+                        "texture.gold_leggings",
+                        "texture.netherite_leggings"
+                    ]
+                }
+            },
+            "geometry": "Geometry.leggings_rend2",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.leggings[query.armor_texture_slot(2)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_leggings ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_leggings",
+                "a": "variable.enchanted_leggings ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.hud_boots2": {
+            "arrays": {
+                "textures": {
+                    "array.boots": [
+                        "texture.leather_boots",
+                        "texture.chainmail_boots",
+                        "texture.iron_boots",
+                        "texture.diamond_boots",
+                        "texture.gold_boots",
+                        "texture.gold_boots",
+                        "texture.gold_boots",
+                        "texture.netherite_boots"
+                    ]
+                }
+            },
+            "geometry": "Geometry.boots_rend2",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.boots[query.armor_texture_slot(3)]"
+            ],
+            "is_hurt_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "on_fire_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            },
+            "overlay_color": {
+                "r": "variable.enchanted_boots ? 0.4 : 0.0",
+                "g": 0,
+                "b": "variable.enchanted_boots",
+                "a": "variable.enchanted_boots ? 0.05 * math.cos(query.life_time* 425.0) + 0.25 : 0.0"
+            }
+        },
+        "controller.render.empty_helmetv2": {
+            "geometry": "Geometry.helmet_rend2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_helmet"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_chestplatev2": {
+            "geometry": "Geometry.chestplate_rend2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_chestplate"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_leggingsv2": {
+            "geometry": "Geometry.leggings_rend2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_leggings"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.empty_bootsv2": {
+            "geometry": "Geometry.boots_rend2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.empty_boots"
+            ],
+            "is_hurt_color": {
+                "a": "0.0"
+            },
+            "on_fire_color": {
+                "a": "0.0"
+            }
+        },
+        "controller.render.title_button_display_potion": {
+            "geometry": "geometry.potion_rend",
+            "materials": [{"*": "material.default"}],
+            "textures": ["array.textures[v.potion]"],
+            "light_color_multiplier": 1.25,
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "arrays": {
+                "textures": {
+                    "array.textures": [
+                        "Texture.num00",
+                        "Texture.num01",
+                        "Texture.num02",
+                        "Texture.num03",
+                        "Texture.num04",
+                        "Texture.num05",
+                        "Texture.num06",
+                        "Texture.num07",
+                        "Texture.num08",
+                        "Texture.num09",
+                        "Texture.num10",
+                        "Texture.num11",
+                        "Texture.num12",
+                        "Texture.num13",
+                        "Texture.num14",
+                        "Texture.num15",
+                        "Texture.num16",
+                        "Texture.num17",
+                        "Texture.num18",
+                        "Texture.num19",
+                        "Texture.num20",
+                        "Texture.num21",
+                        "Texture.num22",
+                        "Texture.num23",
+                        "Texture.num24",
+                        "Texture.num25",
+                        "Texture.num26",
+                        "Texture.num27",
+                        "Texture.num28",
+                        "Texture.num29",
+                        "Texture.num30",
+                        "Texture.num31",
+                        "Texture.num32",
+                        "Texture.num33",
+                        "Texture.num34",
+                        "Texture.num35",
+                        "Texture.num36"
+                    ]
+                }
+            }
+        },
+        "controller.render.title_button_display_totem": {
+            "geometry": "geometry.totem_rend",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [
+                "array.textures[v.totem]"
+            ],
+            "light_color_multiplier": 1.25,
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "arrays": {
+                "textures": {
+                    "array.textures": [
+                        "Texture.num00",
+                        "Texture.num00",
+                        "Texture.num01",
+                        "Texture.num02",
+                        "Texture.num03",
+                        "Texture.num04",
+                        "Texture.num05",
+                        "Texture.num06",
+                        "Texture.num07",
+                        "Texture.num08",
+                        "Texture.num09",
+                        "Texture.num10",
+                        "Texture.num11",
+                        "Texture.num12",
+                        "Texture.num13",
+                        "Texture.num14",
+                        "Texture.num15",
+                        "Texture.num16",
+                        "Texture.num17",
+                        "Texture.num18",
+                        "Texture.num19",
+                        "Texture.num20",
+                        "Texture.num21",
+                        "Texture.num22",
+                        "Texture.num23",
+                        "Texture.num24",
+                        "Texture.num25",
+                        "Texture.num26",
+                        "Texture.num27",
+                        "Texture.num28",
+                        "Texture.num29",
+                        "Texture.num30",
+                        "Texture.num31",
+                        "Texture.num32",
+                        "Texture.num33",
+                        "Texture.num34",
+                        "Texture.num35",
+                        "Texture.num36"
+                    ]
+                }
+            }
+        }
+  }
+}
